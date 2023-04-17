@@ -1,4 +1,7 @@
 *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
 }
 
@@ -7,14 +10,84 @@ html, body{
 }
 
 body{
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: #282828;
+    align-items: center; */
+    /* background-color: #282828; */
 }
 
 h1{
-    color: #fff;
-    font-size: 144px;
+    /* color: #fff; */
+    /* font-size: 144px; */
+    font-size: 50px;
     font-weight: 300;
+}
+
+/* ESTILOS PROPIOS */
+
+.container{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: repeat(2, 1fr); */
+    grid-template-rows: 150px 1fr;
+}
+
+.reloj{
+background: red;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.imagen{
+background: green;
+}
+.cedula{
+background: yellow;
+}
+.marcador{
+    background: blue;
+    display: grid;
+    place-items: center;
+}
+.cedula{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.dig{
+    background: purple;
+    width: 40px;
+    height: 40px;
+    display: block;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bolder;
+    margin: 0;
+    padding: 0;
+}
+.numeros{
+    width: 90%;
+    height: 500px;
+    background: yellow;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+
+.numeros a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: violet;
+    width: 90px;
+    height: 90px;
+    font-size: 40px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
 }
