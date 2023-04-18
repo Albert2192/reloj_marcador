@@ -1,3 +1,22 @@
+@font-face {
+    font-family: 'Montserrat200';
+    src: url(../fonts/Montserrat200-ExtraLight.ttf);
+}
+@font-face {
+    font-family: 'Montserrat300';
+    src: url(../fonts/Montserrat300-Light.ttf);
+}
+@font-face {
+    font-family: 'Montserrat400';
+    src: url(../fonts/Montserrat400-Regular.ttf);
+}
+@font-face {
+    font-family: 'MontserratBold';
+    src: url(../fonts/Montserrat500-Medium.ttf);
+}
+:root{
+
+}
 *{
     margin: 0;
     padding: 0;
@@ -5,31 +24,19 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
 }
 
-html, body{
-    height: 100%;
-}
-
-body{
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* background-color: #282828; */
-}
-
 h1{
-    /* color: #fff; */
-    /* font-size: 144px; */
     font-size: 50px;
     font-weight: 300;
+    font-family: 'MontserratBold';
 }
 
 /* ESTILOS PROPIOS */
 
 .container{
+    width: 100%;
     min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* grid-template-rows: repeat(2, 1fr); */
     grid-template-rows: 150px 1fr;
 }
 
@@ -65,18 +72,20 @@ background: yellow;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Montserrat400' !important;
     font-size: 25px;
     font-weight: bolder;
     margin: 0;
     padding: 0;
 }
 .numeros{
-    width: 90%;
-    height: 500px;
-    background: yellow;
+    /* width: 90%; */
+    /* height: 500px; */
+    /* background: yellow; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
+    gap: 40px;
 }
 
 .numeros a{
@@ -86,7 +95,9 @@ background: yellow;
     background: violet;
     width: 90px;
     height: 90px;
+    font-family: 'MontserratBold';
     font-size: 40px;
+    font-weight: bolder;
     text-decoration: none;
     border-radius: 8px;
     font-weight: 500;

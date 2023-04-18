@@ -9,15 +9,6 @@ html, body{
     height: 100%;
 }
 
-body{
-    /* display: flex;
-    flex-direction: column;
-    gap: 60px;
-    justify-content: center;
-    align-items: center; */
-    /* background-color: #282828; */
-    /* background: url(images/b1.jpg); */
-}
 .container{
     width: 100%;
     min-height: 100vh;
@@ -109,7 +100,6 @@ h1{
     align-items: center;
     gap: 10px;
     list-style: none;
-    /* background: red; */
     width: 100%;
 }
 
@@ -127,8 +117,9 @@ h1{
     font-size: 14px;
     color: #282828;
     display: flex;
-    justify-content: center;
     align-items: center;
+    padding: 5px 15px;
+    gap: 8px;
 }
 
 .options ul li a:hover{
