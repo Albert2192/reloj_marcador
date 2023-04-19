@@ -9,7 +9,7 @@ const currentTime = () => {
     mm = mm < 10 ? `0${mm}` : mm;
     ss = ss < 10 ? `0${ss}` : ss;
 
-    let time = `${hh}:${mm}:${ss}`;
+    let time = `<span>${hh}</span>:<span>${mm}</span>:<span>${ss}</span>`;
     el.innerHTML = time;
 };
 

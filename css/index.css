@@ -30,7 +30,11 @@ h1{
     width: 80%;
     text-align: center;
 }
-
+h1 span{
+    display: inline-block;
+    width: 180px;
+    /* background: red; */
+}
 .marcar{
     display: flex;
     background: #0288D1;
