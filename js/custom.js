@@ -1,3 +1,5 @@
+const url_base = 'https://beckomecanica.com/ws/'
+
 const currentTime = () => {
     const el = document.querySelector("h1");
     let date = new Date();

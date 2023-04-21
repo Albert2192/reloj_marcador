@@ -14,9 +14,27 @@
     font-family: 'MontserratBold';
     src: url(../fonts/Montserrat500-Medium.ttf);
 }
+@font-face {
+    font-family: 'Montserrat600';
+    src: url(../fonts/Montserrat600-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'Montserrat700';
+    src: url(../fonts/Montserrat700-Bold.ttf);
+}
+@font-face {
+    font-family: 'Montserrat800';
+    src: url(../fonts/Montserrat800-ExtraBold.ttf);
+}
+@font-face {
+    font-family: 'Montserrat900';
+    src: url(../fonts/Montserrat900-Black.ttf);
+}
 :root{
     --blanco: #fff;
     --negro: #282828;
+    --success: #00897B;
+    --danger: #F44336;
 }
 *{
     margin: 0;
@@ -26,8 +44,8 @@
 }
 
 h1{
-    font-size: 50px;
-    font-weight: 300;
+    font-size: 90px;
+    font-weight: 400;
     font-family: 'MontserratBold';
     color: var(--blanco);
 }
@@ -40,7 +58,7 @@ h1{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 150px 1fr;
-    background: url(../images/b2.jpg);
+    background: linear-gradient(rgba(11, 83, 69, 0.9), rgba(21, 67, 96, 0.9)), url(../images/b2.jpg);
     background-size: cover;
     position: relative;
 }
@@ -125,7 +143,7 @@ align-items: center;
     background: #D0D3D4;
     width: 90px;
     height: 90px;
-    font-family: 'MontserratBold';
+    font-family: 'Montserrat600';
     font-size: 40px;
     font-weight: bolder;
     text-decoration: none;
@@ -149,4 +167,40 @@ footer p{
     font-family: 'Montserrat400';
     /* font-weight: bolder; */
     color: var(--blanco);
+}
+
+#ok{
+    color: var(--success);
+}
+#clear{
+    color: var(--danger);
+}
+
+.alert{
+    background: var(--success);
+    display: block;
+    width: 250px;
+    padding: 15px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: -45px;
+    left: calc(50% - 125px);
+    z-index: 1;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+.alert_message{
+    text-align: center;
+    color: var(--blanco);
+    font-family: 'MontserratBold';
+    font-size: 13px;
+}
+
+.alert.active{
+    top: 20px;
+    opacity: 1;
+}
+
+.btn{
+    box-shadow: inset 0px -5px 8px #00000099;
 }
